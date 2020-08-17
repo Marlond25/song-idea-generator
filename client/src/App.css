@@ -1,0 +1,68 @@
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: 40vh;
+  font-family: Ubuntu;
+  font-size: 26px;
+  color: #53E2EB;
+  /* #F64F71 #003B82 #623FD4 #5FD43F */
+}
+
+body {
+  background-color: #003B82;
+}
+
+.Instrument {
+  grid-area: instruments;
+  min-height:100px;
+}
+
+.Bpm {
+  grid-area: bpms;
+  min-height:100px;
+}
+
+.Progression {
+    grid-area: progressions;
+    min-height:100px;
+}
+
+.RandomInstrument {
+  color: #5FD43F;
+}
+
+.RandomBpm {
+  color: #5FD43F;
+}
+
+.RandomProgression {
+  color: #5FD43F;
+}
+
+.App {
+  grid-template-areas:
+  "instruments"
+  "bpms"
+  "progressions";
+}
+
+@media only screen and (min-width: 800px) {
+  .App {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    text-align: center;
+    margin-top: 50vh;
+  }
+  .App {
+    grid-template-areas:
+    "instruments bpms progressions";
+  }
+  .Instrument {
+    justify-self: right;
+  }
+  .Progression {
+    justify-self: left;
+  }
+}

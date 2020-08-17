@@ -1,0 +1,3 @@
+[submodule "song-idea-generator-server"]
+	path = song-idea-generator-server
+	url = https://github.com/Marlond25/song-idea-generator-server.git
